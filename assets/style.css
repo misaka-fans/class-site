@@ -11,6 +11,12 @@
     height: 30%;
   }
 }
+footer {
+  text-align: center;
+}
 small {
   color: grey;
+  margin-left: auto;
+  margin-right: auto;
 }
+
