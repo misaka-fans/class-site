@@ -42,6 +42,22 @@
     <h3>奖项</h3>
     <p>待收集</p>
   </div>
+  <link href="http://your_domain:8080/dist/Artalk.css" rel="stylesheet">
+
+<!-- JS -->
+<script src="http://your_domain:8080/dist/Artalk.js"></script>
+
+<!-- Artalk -->
+<div id="Comments"></div>
+<script>
+Artalk.init({
+  el:        '#Comments',                // 绑定元素的 Selector
+  //pageKey:   '/post/1',                  // 固定链接 (留空自动获取)
+  pageTitle: '2603班留言板',  // 页面标题 (留空自动获取)
+  server:    'http://47.236.36.250:23366',  // 后端地址
+  site:      '2603班留言板',             // 你的站点名
+})
+</script>
   <hr>
   <footer>
     <small>&copy 2023 Misaka09982(Shbwb)</small><br>
