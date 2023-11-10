@@ -1,19 +1,59 @@
-.frontpic {
-   display: flex;
-   justify-content: center; /* 水平居中 */
-   align-items: center;     /* 垂直居中 */
-   width: 100%;
-   height: auto;
-} 
-@media screen and (min-width:1000px){
-  .frontpic{
-    width: 50%;
-    height: 30%;
+*{
+  margin: 0%;
+  padding: 0%;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  /* 水平居中 */
+  align-items: center;
+  /* 垂直居中 */
+  position: relative;
+}
+
+/* 移动端 */
+@media screen and (max-width:1000px) {
+  .frontpic {
+    width: 90vw;
+    height: auto;
+    object-fit: cover;
+  }
+  .art-word{
+    font-size: 5px;
+    position: absolute;
+    top: 0px;
+    width: 400px;
+    display: none;  /* 移动端字有点大 先隐藏吧*/
   }
 }
+
+
+/* PC端*/
+@media screen and (min-width:1000px) {
+  .art-word{
+    padding: 5px;
+    position: absolute;
+    top:0px;
+    color:#ff9900;
+    width: 400px;
+    height: auto;
+    z-index: 2;
+    background-color: rgba(0,0, 0, 0.6);
+    clip-path: polygon(0 0,100% 0,100% 45%, 85% 90%,0 100%,10% 70%);
+  }
+ 
+  .frontpic {
+    z-index: 1;
+    width: 73vw;
+    height: 70vh;
+    object-fit: cover;
+  }
+}
+
 footer {
   text-align: center;
 }
+
 small {
   color: grey;
   display: inline-block;
@@ -21,4 +61,3 @@ small {
   margin-right: auto;
   text-align: center;
 }
-
