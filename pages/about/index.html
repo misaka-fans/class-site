@@ -54,6 +54,9 @@ Artalk.init({
   pageTitle: '2603班留言板',  // 页面标题 (留空自动获取)
   server:    'https://comment.mhs2603.space',  // 后端地址
   site:      '2603班留言板',             // 你的站点名
+  avatarURLBuilder: (comment) => {
+        return `https://cravatar.cn/avatar/${comment.email_encrypted}`;
+  },
 })
 </script>
   <hr>
